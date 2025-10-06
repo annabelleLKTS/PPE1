@@ -1,2 +1,2 @@
 # PPE1
-Programmation et Projet Encadré &amp;
+Programmation et Projet Encadré 1
