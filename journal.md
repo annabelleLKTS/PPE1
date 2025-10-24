@@ -113,3 +113,16 @@ tout en minisucle !
 4) étape 4 : git push origin nomdutag (<---- pourquoi origin ? C'est le nom du dépot distant, autrement dit de "github" ici traduction en fr : envoie le tag sur github)
 
 
+	C.2) Comment donner un tag a un commit ENCOURS ? (je viens tout juste de le commit)
+
+1) étape 1 : après git commit -m "nomquejeveux" 
+
+2) étape 2 : git tag nomdutagquejeveuxdonner [la salle différence]
+
+3) étape 3 : git tag (<--- voir si il est bien crée)
+
+4) étape 4 : git push origin nomdutag 
+
+or
+
+5) étape 5 : git push origin --tags (<--- pour envoyer tous les nouveaux tag)
