@@ -91,7 +91,25 @@ b) sur github : dossier > cliquer sur nom du fichier > history
 
 
 ## A faire pour la prochaine fois ?
-- Comprendre le tag
+- Comprendre le tag [validé !]
 - explorer d'autres commandes de git pour être à l'aise avec le mini projet et le projet !
 - tester sans git status
 - comprendre la notion de branche ! 
+
+
+### C) Le tag
+Donc j'ai travaillé mon tag, notamment :
+
+	C.1) Comment donner un tag a un ancien commit ?
+
+tout en minisucle ! 
+
+1) étape 1 : aller à l'emplacement où se trouve le fichier
+
+2) étape 2 : git tag  nomquejedonneautag numérocommit (<--- on le trouve sur github dans history ! ou git log)
+
+3) étaoe 3 : git tag (<--- pour vérifier que le tag est bien crée)
+
+4) étape 4 : git push origin nomdutag (<---- pourquoi origin ? C'est le nom du dépot distant, autrement dit de "github" ici traduction en fr : envoie le tag sur github)
+
+
