@@ -59,3 +59,39 @@ Je me suis créer un petit répertoire !
 Je compte créer un deuxième compte github, pour me familiariser avec cette plateforme sans avoir peur de tout casser sur mon github pour les cours !
 
 4) J'ai mis à jour mon journal pour m'entrainer justement avec cette partie que je ne suis pas confiante de faire ! Donc je vais revenir faire un update à ce sujet ! 
+
+## 24/10/2025 : git et github utilisation en autonomie 
+
+### A)  Modifications d'un fichier suivi par git
+
+note) Je suis reveneue faire un update le jour même car je me suis entrainée et ça c'est plutôt bien passé ! à la fin de cet update, j'indiquerai ce que j'aimerai travailler pour la prochaine fois concerçant github.
+
+0) Le point qui était flou pour moi et qui a été élucidé : j'avais peur d'ajouter mon fichier à la suite des commandes, j'avais peur que tout s'efface. Bon ce qui me freine dans ma progression c'est vraiment la peur de tout casser, c'est pourquoi je dois vraiment créer un dossier entrainement!
+
+
+(tout est en miniscule, je mets en majuscule, juste pour bien me repérer) 
+
+1) étape 1 : GIT STATUS nomdufichier
+pourquoi commencer par git status ? Juste pour s'assurer que les modifications ont bien étaient faites ! [J'aimerai tout de même essayer de voir si on peut le faire sans cette étape]
+				    Mais aussi pour savoir on se trouve dans quelle branche car on peut en avoir besoin pour la partie push ! [Je dois mieux comprendre cette histoire de branche car c'est encore un peu flou pour moi]
+
+2) étape 2 : GIT ADD nomdufichier
+pourquoi on git add : c'est tout simplement pour ajouter toutes les modifications qu'on vient de faire dans le "véhicule" qui est chargé de les transporter jusqu'à github.
+
+3) étape 3 : GIT COMMIT -m "expliquepourquoituasfaitcettemodif" (sans nom du fichier)
+pourquoi on git commit : on scelle le vehicule qui contient les modifications pour que rien ne s'échappe. Et juste pour des questions pratique on dit pourquoi on a entrepris cela.
+
+4] étape 4 : GIT PUSH 
+pourquoi on git push : l'étape la plus facile, on envoie le véhicule scellé, répértorié et chargé de nos modifications sur github ! 
+
+### B) Comment voir les anciennes versions/commits :
+
+a) sur le terminal : git log
+b) sur github : dossier > cliquer sur nom du fichier > history
+
+
+## A faire pour la prochaine fois ?
+- Comprendre le tag
+- explorer d'autres commandes de git pour être à l'aise avec le mini projet et le projet !
+- tester sans git status
+- comprendre la notion de branche ! 
