@@ -130,7 +130,7 @@ or
 dernier update :
 - j'ai un rencontré un problème, tag s'est bien envoyé mais pas mon commit ! dois je mettre un push après le commit ? à résoudre !
 
-## 27/10/2025 : Affronter ses peurs !
+## 27/10/2025 : Affronter ses peurs ! BASH & SCRIPT
 
 note) Aujourd'hui nous devons rendre notre mini-projet ! Par le passé, j'avais tenté de faire un script mais ça n'avait pas fonctionné ! Je suis venue en cours totalement abbatue, c'est d'ailleurs à partir de cette expérience que j'ai commencé à poser beaucoup plus de questions et que j'ai mis en place 
 ma stratégie d'apprentissage ! Donc voic ce que j'ai acquis aujourd'hui :
@@ -147,3 +147,11 @@ J'ai aussi compris comment l'afficher sur le terminale (bash nomdufichier).
 
 note personnelle) Je suis tellement plus à l'aise avec Linux et github, moins peur de me tromper ! Je suis heureuse, pendant ces vacances je dois rattraper mon retard ! Rappellons que je n'avais pas d'ordinateur pendant les 2 premières semaines du master ! Donc je suis vraiment fière de moi !
 		  J'AIME énorément mettre à jour mon journal de bord ! Keep going ! 
+
+5) BASH NOM.sh (tout en minisucle) : 
+	a) J'ai crée un tag spécialement pour le point qui me montre comment utiliser un script pour mon nouveau script !!! 
+	b) étape du script simplifié :
+		b1- dans éditeur de text écrire mon script > enregistrer > SORTIR de l'editeur de text
+		b2- dans le terminal rendre exécutable le fichier : chmod nomdufichier
+		b3- dans le terminal écrire : bash nomdufichier aquoi_correspond_$1 aquoi_correspond_$2 
+		/!\- PAS BESOIN de réécrire le script et de remplacer les dollars ! Juste écrire à quoi correspond les dollars ! 
