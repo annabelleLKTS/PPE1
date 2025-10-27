@@ -1,7 +1,9 @@
-#!/bin/bash
-for annee in 2016 2017 2018
-do
-    total=$(grep -c "Location" ann/$annee/*.ann | awk -F: '{sum += $2} END {print sum}')
-    echo "Année $annee : $total"
-done
+#!/usr/bin/bash
+
+echo "Nombre de lieux en 2016:"
+cat 2016/* | grep Location | wc -l
+echo "Nombre de lieux en 2017:"
+cat 2017/* | grep Location | wc -l
+echo "Nombre de lieux en 2018:"
+cat 2018/* | grep Location | wc -l
 
