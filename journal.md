@@ -126,3 +126,6 @@ tout en minisucle !
 or
 
 5) étape 5 : git push origin --tags (<--- pour envoyer tous les nouveaux tag)
+
+dernier update :
+- j'ai un rencontré un problème, tag s'est bien envoyé mais pas mon commit ! dois je mettre un push après le commit ? à résoudre !

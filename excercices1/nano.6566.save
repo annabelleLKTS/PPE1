@@ -1,0 +1,10 @@
+#!/usr/bin/bash
+
+echo -n "2016: "
+cat ann/2016/*/*.ann | grep "Location" | wc -l
+
+echo -n "2017: "
+cat ann/2017/*/*.ann | grep "Location" | wc -l
+
+echo -n "2018: "
+cat ann/2018/*/*.ann | grep "Location" | wc -l 
