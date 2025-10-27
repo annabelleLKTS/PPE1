@@ -129,3 +129,21 @@ or
 
 dernier update :
 - j'ai un rencontré un problème, tag s'est bien envoyé mais pas mon commit ! dois je mettre un push après le commit ? à résoudre !
+
+## 27/10/2025 : Affronter ses peurs !
+
+note) Aujourd'hui nous devons rendre notre mini-projet ! Par le passé, j'avais tenté de faire un script mais ça n'avait pas fonctionné ! Je suis venue en cours totalement abbatue, c'est d'ailleurs à partir de cette expérience que j'ai commencé à poser beaucoup plus de questions et que j'ai mis en place 
+ma stratégie d'apprentissage ! Donc voic ce que j'ai acquis aujourd'hui :
+
+1) J'ai repris les diapo et j'ai fait des recherches, j'ai maintenant compris le principe et fonctionnement des pipes | . Je saurais le réexpliquer à un débutant. 
+
+2) J'ai reussi à ajouter un dossier que j'ai crée sur mon dépot local sur github ! Je n'y arrivais pas avant ! C'est assez simple, je dois être dans mon dossier qui est lié à github et NON dans le dossier que j'aimerai ajouter, sinon ça me créer un nouveau dépot ! 
+C'est ici que je me trompais ! Ensuite, git status, git add, git commit -m, git push ! 
+
+3) J'ai enfin réussi à faire en AUTONOMIE l'exercice avec comptes.sh, ça ne fonctionnait pas la semaine où je devais le déposer ! Je suis vraiment fière de moi !  J'ai reussi à écrire un script (les pipes) !
+J'ai aussi compris comment l'afficher sur le terminale (bash nomdufichier). 
+
+4] bonus : je sais faire un + avec mon clavier maintenant ! Merci à chmod +x qui sert à informer que le fichier est bien exécutable ! J'ai également reussi à faire un tag si facilement !
+
+note personnelle) Je suis tellement plus à l'aise avec Linux et github, moins peur de me tromper ! Je suis heureuse, pendant ces vacances je dois rattraper mon retard ! Rappellons que je n'avais pas d'ordinateur pendant les 2 premières semaines du master ! Donc je suis vraiment fière de moi !
+		  J'AIME énorément mettre à jour mon journal de bord ! Keep going ! 
