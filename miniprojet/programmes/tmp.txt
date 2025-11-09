@@ -6,9 +6,9 @@ content-language: fr
 accept-ch: 
 last-modified: Fri, 07 Nov 2025 21:34:18 GMT
 content-type: text/html; charset=UTF-8
-age: 43979
+age: 53573
 accept-ranges: bytes
-x-cache: cp6014 miss, cp6016 hit/97
+x-cache: cp6014 miss, cp6016 hit/103
 x-cache-status: hit-front
 server-timing: cache;desc="hit-front", host;desc="cp6016"
 strict-transport-security: max-age=106384710; includeSubDomains; preload
@@ -22,9 +22,9 @@ cache-control: private, s-maxage=0, max-age=0, must-revalidate, no-transform
 vary: Accept-Encoding,X-Subdomain,Cookie,Authorization,User-Agent
 set-cookie: GeoIP=FR:NOR:Vernon:49.09:1.47:v4; Path=/; secure; Domain=.wikipedia.org
 set-cookie: NetworkProbeLimit=0.001;Path=/;Secure;SameSite=None;Max-Age=3600
-set-cookie: WMF-Uniq=Ch15yXbhzXxSyFl1iUQu0gKmAAAAAFvdZpWBc9vjrRNXEOcCzqB55TnYMIqUmQ_n;Domain=.wikipedia.org;Path=/;HttpOnly;secure;SameSite=None;Expires=Mon, 09 Nov 2026 00:00:00 GMT
+set-cookie: WMF-Uniq=AIPEhVU60nMszlyy5MNL9AKmAAAAAFvdHDo7lnlRa7VeMJHlTDvjJgm0lvmTXyMs;Domain=.wikipedia.org;Path=/;HttpOnly;secure;SameSite=None;Expires=Mon, 09 Nov 2026 00:00:00 GMT
 content-length: 342300
-x-request-id: 5c77ca14-753b-40e0-92f9-e25bba1bce94
+x-request-id: 6a77a42d-ed97-40a9-9951-35527fdd26e0
 
 <!DOCTYPE html>
 <html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available" lang="fr" dir="ltr">
