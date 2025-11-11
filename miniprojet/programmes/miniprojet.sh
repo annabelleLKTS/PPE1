@@ -1,4 +1,4 @@
-#!/usr/bib/bash
+#!/usr/bin/bash
 
 if [ $# -ne 1 ]
 then
@@ -16,12 +16,18 @@ echo "<!DOCTYPE html>"
 echo "<html>"
 echo "<head>"
 echo "	<meta charset='UTF-8' />"
-echo "	<title>Répertoire des liens de PPE1<\title>" >>  ../tableau.html
+echo "	<title>Répertoire des liens de PPE1</title>"
 echo "</head>"
 echo "<body>"
 echo "<h2>Tableau liens PPE1</h2>"
-echo "<table border='1'>"
-echo "<ul>" > ../tableau.html
+echo "<table border='1'>" >  ../tableau.html
+echo 	"<tr>"
+echo		"<th>NUMERO</th>" >> ../tableau.html
+echo            "<th>LIENS</th>" >> ../tableau.html
+echo            "<th>ENCODAGE</th>" >> ../tableau.html
+echo            "<th>NOMBRE DE MOTS</th>" >> ../tableau.html
+echo	"</tr>"
+
 
 while read -r line;
 do
@@ -36,16 +42,19 @@ charset=$(echo $content_type | grep -E -o "charset=.*" | cut -d= -f2)
 nb_mots=$(cat tmp.txt | lynx -dump -stdin -nolist | wc -w)
 
 
-echo -e "<li>${lineno}. <a href='${line}'>${line}</a> ${charset} ${nb_mots}</li>"  >> ../tableau.html
-
+echo    "<tr>"
+echo            "<td>${lineno}</td>"
+echo            "<td>${line}</td>"
+echo            "<td>${charset}</td>" 
+echo            "<td>${nb_mots}</td>"
+echo    "</tr>"
 
 lineno=$((lineno +1))
 
-done < "$liens"
+done < "$liens" >> ../tableau.html 
 
-echo "</ul>" 
 echo "</table>"
 echo "</body>"
-echo "</html>" >> "$html_page"
+echo "</html>" >>  "$html_page"
 
 echo "fichier html généré : $html_page"
