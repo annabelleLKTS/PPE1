@@ -155,3 +155,111 @@ note personnelle) Je suis tellement plus à l'aise avec Linux et github, moins p
 		b2- dans le terminal rendre exécutable le fichier : chmod nomdufichier
 		b3- dans le terminal écrire : bash nomdufichier aquoi_correspond_$1 aquoi_correspond_$2 
 		/!\- PAS BESOIN de réécrire le script et de remplacer les dollars ! Juste écrire à quoi correspond les dollars ! 
+
+## 12/11/2025 : comment devenir efficace au delà d'être capable de le faire ?
+
+
+update : miniprojet-1 
+
+° TOUT CE QUE J'AI APPRIS 
+
+- expr : fonction qui permet d'effectuer des calcules simples
+- expr ... + chiffre : nous dit d'augmenter de x chiffre 
+- curl : pour récupérer des métadonnées sur une page web
+- curl pageweb : récupérer métadonnées sur une page spécifique 
+- nolist : pour retirer la liste de lien qui ne fait pas parties de la page web. 
+- lynx : pour accéder à une page internet
+- lineno : pour afficher le numéro de ligne
+- t\ : pour annoter les tabulations
+- done < $... : demande le chemin du fichier qu'on va lire
+- while -r line : va lire ligne par ligne et stocker cela 
+- /n : retour à la ligne
+- /r : retour chariot (revenir en début de ligne)
+- head -chiffre : fermer d'affichier certaines lignes d'un fichier ! Si je mets -1 = PREMIERE LIGNE ! Si je mets -10 : dix premières lignes 
+
+A) ZOOM sur CURL
+	a1) curl -I -w "%{http_code}"    ==> récupérer code http
+	a2) curl -I -w "%{content_type]" ==> récupérer encodage
+
+ce que je n'avais pas réussi à faire : 
+1- affichier mes données dans le format tableau.tsv.
+Comment j'ai réglé le soucis : > tableau.tsv . Grace a la redirection !
+Le problème était : que je n'arrivais pas à lier les deux documents. 
+2- créer une variable pour le fichier urls.
+Le problème était : ma mauvaise lecture de ce que j'écris et ma mauvaise utilisation des variables m'a énormément ralenti.
+3- LES COQUILLES ! Parfois je crois que j'ai mal fait quelque chose mais 50% du temps c'est une faute de frappe qui bloque tout. 
+4- Lorsque ce n'est pas identique aux professeurs je crois que j'ai tout faut, tandis que c'est juste une erreur de lecture de ma part ! 
+
+update : miniprojet-2
+
+### HTML 
+
+- tag -d nomdutag : retirer un tag existant 
+- refermer le html après done
+- echo -e "  " : c'est ce qu'il faut utiliser pour que ça apparaisse dans notre fichier HTML.
+		Pour chaque nouvel élément utiliser echo -e " " . Ça peut être après une boucle, ect...
+Voici un exemple :
+
+echo -e "
+<html>
+<body>
+<table>
+	<tr>
+	<th>$lineno</th>
+	<th>URL</th>
+	<th>code http</th>
+	<th>encodage</th>
+	<th>nombre de mots</th>
+	</tr>
+
+<tr>
+	<td>$lineno</td>
+	<td>$line</td>
+	<td>$http_code</td>
+	<td>$encoding</td>
+	<td>$nb_mots</td>
+</tr>
+
+</html>
+</body>
+</table>"
+
+ce que je n'avais pas réussi à faire : 
+1- faire apparaitre tout ce que je veux faire apparaitre
+Comment j'ai réglé le soucis : > tableau.tsv . Grace a la redirection !
+Raison n°1 : Je pense que le problème est lié au fait que je redirige dans le script directement au lieu de le faire dans le terminale ! 
+Mais je ne suis pas sûre car pour certaines choses cela a fonctionné, donc je dois tester. 
+Raison n°2 : Encore une fois c'est lié au fait que je ne sais pas exactement ce que je fais ! 
+
+VOICI LE PROBLEME DANS MON SCRIPT 
+
+<head>
+<title> Répertoire des liens PPE1 </title> >> ../tableau.html
+</head>
+
+commentaire : J'avais mis la redirection car je pensais que ça pourrait m'aider à affichier sur ma page web. Mais la raison pour laquelle il apparait pas, c'est parce-que <head> sert à contenir des métadonnées ! 
+si je voulais que le titre apparaisse j'aurai dû écrire <title> dans body ! 
+
+2- J'ai oublié le code_http : mais il est dans mon premier commit, trouvable avec : 3b47ae2 ou miniprojet03hdumatin 
+code_http=$(curl -o /dev/null -s -w "%{http_code}" -L "$line")
+
+3- Je n'ai pas pu commit avec mon ancien commit car j'avais pas mis toutes les modifications dans ce commit, donc j'ai du corriger pour que tout apparaisse ! MAIS je ne l'ai pas supprimé ! 
+Donc les tag miniprojet-1 et miniprojet1-revu ont des commits différents.
+
+
+[fin de update]
+
+
+B) J'ai demandé à notre professeur comment etre efficace et ne plus perdre de temps.
+Voic les conseils :
+
+- penser en terme de structure
+- quel est la sémantique 
+- comment on va formuler cela
+- commencer à la main (pour avoir une idée de ce que je veux obtenir avec 2 lignes d'exemples)
+- repérer ce qui va être automisable => ce qui va se repeter
+
+## à faire pour la prochaine fois
+- refaire miniprojet-1
+- refaire miniprojet-2
+- pratiquer les astuces que l'enseignant m'a donné pour développer ma logique et ne plus prendre du temps car chaque projet m'a pris plus de 7 heures .... C'est bien trop. 
