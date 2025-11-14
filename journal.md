@@ -263,3 +263,36 @@ Voic les conseils :
 - refaire miniprojet-1
 - refaire miniprojet-2
 - pratiquer les astuces que l'enseignant m'a donné pour développer ma logique et ne plus prendre du temps car chaque projet m'a pris plus de 7 heures .... C'est bien trop. 
+
+
+## 13/11/25 : GRANDE Amélioration 
+
+	A) J'ai crée un exerice pour m"améliorer  
+Je suis trop contente car ça a payé ! 
+J’ai inventé un exercice : demander à chatgpt de créer des mini script et numéroter chaque ligne pour que je puisse dire ce que fait chaque ligne de son script ! 
+Cela m’aide à travailler ma lecture .
+Et ça a vraiment fonctionné car pour la suite du mini-projet j’ai mis à jour mon tableau et on peut voir que je me suis grandement amélioré ! 
+
+	B) Mini-Projet update majeur 
+
+Les lacunes de mon tableau précédent : 
+- oublier de mettre mon curl dans une variable.
+- oublié de récupérer le code http : pour le récupérer voici les solutions :
+		- 1) j'ai créé une variable data dans laquelle j’ai stocké curl, 
+		- 2) j’ai créé une variable http_code dans laquelle j’ai mis une opération, la suivante 
+		- 3) http code=$(echo "$data" | tail -n 1) donc lis le contenu de data et récupère la dernière ligne .
+- une amélioration que j"ai apporté = j’ai retiré toutes les redirections, à la place je fais bash miniprojet.sh ... et je redirige à ce moment là
+
+
+## 14/11/25 : SUITE DU MINI-PROJET
+
+	## Notes prises durant le travail 
+
+- Lorsqu’on déploie, pour tester le lien =  ex : Pseudo.github.io/.../Ce qu’on met à ce moment là /.../ c’est le dossier où on se trouve notre page.
+- J’ai rencontré un problème avec le fait d’utiliser le style bulma dans mon script.Seul le premier style apparaissait Donc j’ai dû despecialisé 
+- Ma victoire : j’ai pris vraiment la moitié du temps de cette fois-ci pour faire l’exercice.A part la despecialisation des " " . Je n’ai pas particulièrement bloqué quelque part.Je me suis grandement amélioré !
+
+note à moi-même : tu commences vraiment à comprendre la logique ! Trop cool ! 
+
+[temps de travail : environ 2 heures] (yeeeeeees !!!)
+[fin update]
