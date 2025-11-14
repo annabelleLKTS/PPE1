@@ -1,37 +1,37 @@
 HTTP/2 200 
-date: Mon, 10 Nov 2025 07:46:25 GMT
+date: Thu, 13 Nov 2025 13:01:36 GMT
 server: ATS/9.2.11
 x-content-type-options: nosniff
 content-language: fr
 accept-ch: 
-last-modified: Fri, 07 Nov 2025 21:34:18 GMT
+last-modified: Wed, 12 Nov 2025 10:57:22 GMT
 content-type: text/html; charset=UTF-8
-age: 59512
+age: 15638
 accept-ranges: bytes
-x-cache: cp6014 miss, cp6016 hit/13
+x-cache: cp6014 hit, cp6016 hit/6
 x-cache-status: hit-front
 server-timing: cache;desc="hit-front", host;desc="cp6016"
 strict-transport-security: max-age=106384710; includeSubDomains; preload
 report-to: { "group": "wm_nel", "max_age": 604800, "endpoints": [{ "url": "https://intake-logging.wikimedia.org/v1/events?stream=w3c.reportingapi.network_error&schema_uri=/w3c/reportingapi/network_error/1.0.0" }] }
 nel: { "report_to": "wm_nel", "max_age": 604800, "failure_fraction": 0.05, "success_fraction": 0.0}
-set-cookie: WMF-Last-Access=11-Nov-2025;Path=/;HttpOnly;secure;Expires=Sat, 13 Dec 2025 00:00:00 GMT
-set-cookie: WMF-Last-Access-Global=11-Nov-2025;Path=/;Domain=.wikipedia.org;HttpOnly;secure;Expires=Sat, 13 Dec 2025 00:00:00 GMT
-set-cookie: WMF-DP=5a1;Path=/;HttpOnly;secure;Expires=Tue, 11 Nov 2025 00:00:00 GMT
-x-client-ip: 78.242.181.179
+set-cookie: WMF-Last-Access=13-Nov-2025;Path=/;HttpOnly;secure;Expires=Mon, 15 Dec 2025 12:00:00 GMT
+set-cookie: WMF-Last-Access-Global=13-Nov-2025;Path=/;Domain=.wikipedia.org;HttpOnly;secure;Expires=Mon, 15 Dec 2025 12:00:00 GMT
+set-cookie: WMF-DP=415;Path=/;HttpOnly;secure;Expires=Fri, 14 Nov 2025 00:00:00 GMT
+x-client-ip: 78.240.101.23
 cache-control: private, s-maxage=0, max-age=0, must-revalidate, no-transform
 vary: Accept-Encoding,X-Subdomain,Cookie,Authorization,User-Agent
 set-cookie: GeoIP=FR:IDF::48.86:2.35:v4; Path=/; secure; Domain=.wikipedia.org
 set-cookie: NetworkProbeLimit=0.001;Path=/;Secure;SameSite=None;Max-Age=3600
-set-cookie: WMF-Uniq=VBWXckxdvnBRnGHrBpQtrgKoAAAAAFvdIuaOG8OYC27MxLqQhz5rlhY4rTVVDzXh;Domain=.wikipedia.org;Path=/;HttpOnly;secure;SameSite=None;Expires=Wed, 11 Nov 2026 00:00:00 GMT
-content-length: 342300
-x-request-id: c73f34a9-71be-4665-9407-4e23fe632d27
+set-cookie: WMF-Uniq=3tPBcSLS3IWs5XI8NEFOOAKqAAAAAFvdiXLoJQtKLsxVNE6dr8YyLP7lGPfZF6X6;Domain=.wikipedia.org;Path=/;HttpOnly;secure;SameSite=None;Expires=Fri, 13 Nov 2026 00:00:00 GMT
+content-length: 342309
+x-request-id: b8f74bf6-b72d-4807-ad8a-55eede690b07
 
 <!DOCTYPE html>
 <html class="client-nojs vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available" lang="fr" dir="ltr">
 <head>
 <meta charset="UTF-8">
 <title>Robotique — Wikipédia</title>
-<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available";var cookie=document.cookie.match(/(?:^|; )frwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":[",\t."," \t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"],"wgRequestId":"e80d8353-87fc-4a43-92ad-c267dfdc24e5","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Robotique","wgTitle":"Robotique","wgCurRevisionId":230184056,"wgRevisionId":230184056,"wgArticleId":84132,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Article contenant un lien mort","Page utilisant P279","Page utilisant P3095","Page utilisant P2578","Page utilisant P18","Article utilisant l'infobox Discipline","Article utilisant une Infobox","Article à référence souhaitée","Article à référence nécessaire","Article avec une section vide ou incomplète","Page utilisant P5357","Page pointant vers des bases externes","Page pointant vers des bases relatives à la littérature","Page utilisant P486","Page pointant vers des bases relatives à la santé","Page utilisant P9346","Page pointant vers des bases relatives à l'audiovisuel","Page utilisant P1417","Page utilisant P3365","Page utilisant P3219","Page pointant vers des dictionnaires ou encyclopédies généralistes","Article de Wikipédia avec notice d'autorité","Portail:Robotique/Articles liés","Portail:Électricité et électronique/Articles liés","Portail:Génie mécanique/Articles liés","Portail:Technologies/Articles liés","Portail:Intelligence artificielle/Articles liés","Portail:Informatique/Articles liés","Portail:Industrie/Articles liés","Portail:Économie/Articles liés","Robotique"],"wgPageViewLanguage":"fr","wgPageContentLanguage":"fr","wgPageContentModel":"wikitext","wgRelevantPageName":"Robotique","wgRelevantArticleId":84132,"wgTempUserName":null,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":true,"wgConfirmEditCaptchaNeededForGenericEdit":false,"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":0,"wgVisualEditor":{"pageLanguageCode":"fr","pageLanguageDir":"ltr","pageVariantFallbacks":"fr"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":true,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":90000,"wgMetricsPlatformUserExperiments":{"active_experiments":[],"overrides":[],"enrolled":[],"assigned":[],"subject_ids":[],"sampling_units":[]},"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q170978","wgCheckUserClientHintsHeadersJsApi":["brands","architecture","bitness","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGESuggestedEditsTaskTypes":{"taskTypes":["copyedit","link-recommendation"],"unavailableTaskTypes":[]},"wgGETopicsMatchModeEnabled":false,"wgGELevelingUpEnabledForUser":false};
+<script>(function(){var className="client-js vector-feature-language-in-header-enabled vector-feature-language-in-main-page-header-disabled vector-feature-page-tools-pinned-disabled vector-feature-toc-pinned-clientpref-1 vector-feature-main-menu-pinned-disabled vector-feature-limited-width-clientpref-1 vector-feature-limited-width-content-enabled vector-feature-custom-font-size-clientpref-1 vector-feature-appearance-pinned-clientpref-1 vector-feature-night-mode-enabled skin-theme-clientpref-day vector-sticky-header-enabled vector-toc-available";var cookie=document.cookie.match(/(?:^|; )frwikimwclientpreferences=([^;]+)/);if(cookie){cookie[1].split('%2C').forEach(function(pref){className=className.replace(new RegExp('(^| )'+pref.replace(/-clientpref-\w+$|[^\w-]+/g,'')+'-clientpref-\\w+( |$)'),'$1'+pref+'$2');});}document.documentElement.className=className;}());RLCONF={"wgBreakFrames":false,"wgSeparatorTransformTable":[",\t."," \t,"],"wgDigitTransformTable":["",""],"wgDefaultDateFormat":"dmy","wgMonthNames":["","janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"],"wgRequestId":"051d507d-2c04-40cd-aa69-e6d025233048","wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Robotique","wgTitle":"Robotique","wgCurRevisionId":230184056,"wgRevisionId":230184056,"wgArticleId":84132,"wgIsArticle":true,"wgIsRedirect":false,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":["Article contenant un lien mort","Page utilisant P279","Page utilisant P3095","Page utilisant P2578","Page utilisant P18","Article utilisant l'infobox Discipline","Article utilisant une Infobox","Article à référence souhaitée","Article à référence nécessaire","Article avec une section vide ou incomplète","Page utilisant P5357","Page pointant vers des bases externes","Page pointant vers des bases relatives à la littérature","Page utilisant P486","Page pointant vers des bases relatives à la santé","Page utilisant P9346","Page pointant vers des bases relatives à l'audiovisuel","Page utilisant P1417","Page utilisant P3365","Page utilisant P3219","Page pointant vers des dictionnaires ou encyclopédies généralistes","Article de Wikipédia avec notice d'autorité","Portail:Robotique/Articles liés","Portail:Électricité et électronique/Articles liés","Portail:Génie mécanique/Articles liés","Portail:Technologies/Articles liés","Portail:Intelligence artificielle/Articles liés","Portail:Informatique/Articles liés","Portail:Industrie/Articles liés","Portail:Économie/Articles liés","Robotique"],"wgPageViewLanguage":"fr","wgPageContentLanguage":"fr","wgPageContentModel":"wikitext","wgRelevantPageName":"Robotique","wgRelevantArticleId":84132,"wgTempUserName":null,"wgIsProbablyEditable":true,"wgRelevantPageIsProbablyEditable":true,"wgRestrictionEdit":[],"wgRestrictionMove":[],"wgNoticeProject":"wikipedia","wgCiteReferencePreviewsActive":true,"wgConfirmEditCaptchaNeededForGenericEdit":false,"wgMediaViewerOnClick":true,"wgMediaViewerEnabledByDefault":true,"wgPopupsFlags":0,"wgVisualEditor":{"pageLanguageCode":"fr","pageLanguageDir":"ltr","pageVariantFallbacks":"fr"},"wgMFDisplayWikibaseDescriptions":{"search":true,"watchlist":true,"tagline":true,"nearby":true},"wgWMESchemaEditAttemptStepOversample":false,"wgWMEPageLength":90000,"wgMetricsPlatformUserExperiments":{"active_experiments":[],"overrides":[],"enrolled":[],"assigned":[],"subject_ids":[],"sampling_units":[]},"wgEditSubmitButtonLabelPublish":true,"wgULSPosition":"interlanguage","wgULSisCompactLinksEnabled":false,"wgVector2022LanguageInHeader":true,"wgULSisLanguageSelectorEmpty":false,"wgWikibaseItemId":"Q170978","wgCheckUserClientHintsHeadersJsApi":["brands","architecture","bitness","fullVersionList","mobile","model","platform","platformVersion"],"GEHomepageSuggestedEditsEnableTopics":true,"wgGESuggestedEditsTaskTypes":{"taskTypes":["copyedit","link-recommendation"],"unavailableTaskTypes":[]},"wgGETopicsMatchModeEnabled":false,"wgGELevelingUpEnabledForUser":false};
 RLSTATE={"ext.globalCssJs.user.styles":"ready","site.styles":"ready","user.styles":"ready","ext.globalCssJs.user":"ready","user":"ready","user.options":"loading","ext.cite.styles":"ready","ext.wikimediamessages.styles":"ready","skins.vector.search.codex.styles":"ready","skins.vector.styles":"ready","skins.vector.icons":"ready","ext.visualEditor.desktopArticleTarget.noscript":"ready","ext.uls.interlanguage":"ready","wikibase.client.init":"ready"};RLPAGEMODULES=["ext.xLab","ext.cite.ux-enhancements","mediawiki.page.media","site","mediawiki.page.ready","mediawiki.toc","skins.vector.js","ext.centralNotice.geoIP","ext.centralNotice.startUp","ext.gadget.ArchiveLinks","ext.urlShortener.toolbar","ext.centralauth.centralautologin","mmv.bootstrap","ext.popups","ext.visualEditor.desktopArticleTarget.init","ext.visualEditor.targetLoader","ext.echo.centralauth","ext.eventLogging","ext.wikimediaEvents","ext.navigationTiming","ext.uls.interface","ext.cx.eventlogging.campaigns","ext.cx.uls.quick.actions","wikibase.client.vector-2022","ext.checkUser.clientHints","ext.growthExperiments.SuggestedEditSession"];</script>
 <script>(RLQ=window.RLQ||[]).push(function(){mw.loader.impl(function(){return["user.options@12s5i",function($,jQuery,require,module){mw.user.tokens.set({"patrolToken":"+\\","watchToken":"+\\","csrfToken":"+\\"});
 }];});});</script>
@@ -1856,13 +1856,13 @@ F. Pecora, M. Scopelliti and L. Tiberio, «&#160;<cite style="font-style:normal"
 <ul id="bandeau-portail" class="bandeau-portail"><li><span class="bandeau-portail-element"><span class="bandeau-portail-icone"><span class="noviewer" typeof="mw:File"><a href="/wiki/Portail:Robotique" title="Portail de la robotique"><img alt="icône décorative" src="//upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Logo_wikibot.svg/40px-Logo_wikibot.svg.png" decoding="async" width="24" height="24" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Logo_wikibot.svg/60px-Logo_wikibot.svg.png 2x" data-file-width="108" data-file-height="108" /></a></span></span> <span class="bandeau-portail-texte"><a href="/wiki/Portail:Robotique" title="Portail:Robotique">Portail de la robotique</a></span> </span></li> <li><span class="bandeau-portail-element"><span class="bandeau-portail-icone"><span class="noviewer" typeof="mw:File"><a href="/wiki/Portail:Intelligence_artificielle" title="Portail de l’intelligence artificielle"><img alt="icône décorative" src="//upload.wikimedia.org/wikipedia/commons/thumb/6/64/Dall-e_3_%28jan_%2724%29_artificial_intelligence_icon.png/40px-Dall-e_3_%28jan_%2724%29_artificial_intelligence_icon.png" decoding="async" width="24" height="24" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/6/64/Dall-e_3_%28jan_%2724%29_artificial_intelligence_icon.png/60px-Dall-e_3_%28jan_%2724%29_artificial_intelligence_icon.png 2x" data-file-width="820" data-file-height="820" /></a></span></span> <span class="bandeau-portail-texte"><a href="/wiki/Portail:Intelligence_artificielle" title="Portail:Intelligence artificielle">Portail de l’intelligence artificielle</a></span> </span></li> <li><span class="bandeau-portail-element"><span class="bandeau-portail-icone"><span class="noviewer" typeof="mw:File"><a href="/wiki/Portail:G%C3%A9nie_m%C3%A9canique" title="Portail du génie mécanique"><img alt="icône décorative" src="//upload.wikimedia.org/wikipedia/commons/thumb/a/a2/BotOp-logo.svg/40px-BotOp-logo.svg.png" decoding="async" width="24" height="24" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/a/a2/BotOp-logo.svg/60px-BotOp-logo.svg.png 2x" data-file-width="128" data-file-height="128" /></a></span></span> <span class="bandeau-portail-texte"><a href="/wiki/Portail:G%C3%A9nie_m%C3%A9canique" title="Portail:Génie mécanique">Portail du génie mécanique</a></span> </span></li> <li><span class="bandeau-portail-element"><span class="bandeau-portail-icone"><span class="noviewer" typeof="mw:File"><a href="/wiki/Portail:Industrie" title="Portail de l&#39;industrie"><img alt="icône décorative" src="//upload.wikimedia.org/wikipedia/commons/thumb/8/85/Industry_Creative_Tail.svg/40px-Industry_Creative_Tail.svg.png" decoding="async" width="24" height="24" class="mw-file-element" srcset="//upload.wikimedia.org/wikipedia/commons/thumb/8/85/Industry_Creative_Tail.svg/60px-Industry_Creative_Tail.svg.png 2x" data-file-width="128" data-file-height="128" /></a></span></span> <span class="bandeau-portail-texte"><a href="/wiki/Portail:Industrie" title="Portail:Industrie">Portail de l'industrie</a></span> </span></li>                 </ul>
 <!-- 
 NewPP limit report
-Parsed by mw‐web.eqiad.main‐75d4b45f56‐vk6jp
-Cached time: 20251107214432
+Parsed by mw‐web.eqiad.migration‐78c6b9cd79‐rxmm8
+Cached time: 20251112112517
 Cache expiry: 2592000
 Reduced expiry: false
 Complications: [show‐toc]
-CPU time usage: 0.586 seconds
-Real time usage: 1.033 seconds
+CPU time usage: 0.648 seconds
+Real time usage: 0.822 seconds
 Preprocessor visited node count: 6481/1000000
 Revision size: 91558/2097152 bytes
 Post‐expand include size: 160195/2097152 bytes
@@ -1871,25 +1871,25 @@ Highest expansion depth: 12/100
 Expensive parser function count: 3/500
 Unstrip recursion depth: 0/20
 Unstrip post‐expand size: 92926/5000000 bytes
-Lua time usage: 0.219/10.000 seconds
-Lua memory usage: 6662523/52428800 bytes
+Lua time usage: 0.251/10.000 seconds
+Lua memory usage: 6662801/52428800 bytes
 Number of Wikibase entities loaded: 5/500
 -->
 <!--
 Transclusion expansion time report (%,ms,calls,template)
-100.00%  601.465      1 -total
- 25.91%  155.854      1 Modèle:Références
- 18.05%  108.561      1 Modèle:Infobox_Discipline
- 16.92%  101.796      1 Modèle:Liens
-  8.69%   52.275     25 Modèle:Article
-  7.18%   43.197     28 Modèle:Lien_web
-  4.49%   26.992      1 Modèle:Portail
-  4.35%   26.159      8 Modèle:Article_détaillé
-  4.19%   25.187      9 Modèle:Méta_bandeau_de_section
-  3.73%   22.462      1 Modèle:Grec_ancien
+100.00%  639.317      1 -total
+ 28.65%  183.162      1 Modèle:Références
+ 16.17%  103.360      1 Modèle:Liens
+ 14.65%   93.677      1 Modèle:Infobox_Discipline
+  9.94%   63.559     25 Modèle:Article
+  8.18%   52.270     28 Modèle:Lien_web
+  5.22%   33.342      1 Modèle:Portail
+  4.43%   28.304      8 Modèle:Article_détaillé
+  4.36%   27.883      1 Modèle:Grec_ancien
+  4.13%   26.428      9 Modèle:Méta_bandeau_de_section
 -->
 
-<!-- Saved in parser cache with key frwiki:pcache:84132:|#|:idhash:canonical and timestamp 20251107214432 and revision id 230184056. Rendering was triggered because: page_view
+<!-- Saved in parser cache with key frwiki:pcache:84132:|#|:idhash:canonical and timestamp 20251112112517 and revision id 230184056. Rendering was triggered because: page_view
  -->
 </div><noscript><img src="https://fr.wikipedia.org/wiki/Special:CentralAutoLogin/start?useformat=desktop&amp;type=1x1&amp;usesul3=1" alt="" width="1" height="1" style="border: none; position: absolute;"></noscript>
 <div class="printfooter" data-nosnippet="">Ce document provient de «&#160;<a dir="ltr" href="https://fr.wikipedia.org/w/index.php?title=Robotique&amp;oldid=230184056">https://fr.wikipedia.org/w/index.php?title=Robotique&amp;oldid=230184056</a>&#160;».</div></div>
@@ -2035,7 +2035,7 @@ Wikipedia® est une marque déposée de la <a rel="nofollow" class="external tex
 		
 	</ul>
 </div>
-<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.eqiad.main-75d4b45f56-vk6jp","wgBackendResponseTime":1240,"wgPageParseReport":{"limitreport":{"cputime":"0.586","walltime":"1.033","ppvisitednodes":{"value":6481,"limit":1000000},"revisionsize":{"value":91558,"limit":2097152},"postexpandincludesize":{"value":160195,"limit":2097152},"templateargumentsize":{"value":8391,"limit":2097152},"expansiondepth":{"value":12,"limit":100},"expensivefunctioncount":{"value":3,"limit":500},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":92926,"limit":5000000},"entityaccesscount":{"value":5,"limit":500},"timingprofile":["100.00%  601.465      1 -total"," 25.91%  155.854      1 Modèle:Références"," 18.05%  108.561      1 Modèle:Infobox_Discipline"," 16.92%  101.796      1 Modèle:Liens","  8.69%   52.275     25 Modèle:Article","  7.18%   43.197     28 Modèle:Lien_web","  4.49%   26.992      1 Modèle:Portail","  4.35%   26.159      8 Modèle:Article_détaillé","  4.19%   25.187      9 Modèle:Méta_bandeau_de_section","  3.73%   22.462      1 Modèle:Grec_ancien"]},"scribunto":{"limitreport-timeusage":{"value":"0.219","limit":"10.000"},"limitreport-memusage":{"value":6662523,"limit":52428800}},"cachereport":{"origin":"mw-web.eqiad.main-75d4b45f56-vk6jp","timestamp":"20251107214432","ttl":2592000,"transientcontent":false}}});});</script>
+<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgHostname":"mw-web.eqiad.next-6d4894bc99-x9hb6","wgBackendResponseTime":154,"wgPageParseReport":{"limitreport":{"cputime":"0.648","walltime":"0.822","ppvisitednodes":{"value":6481,"limit":1000000},"revisionsize":{"value":91558,"limit":2097152},"postexpandincludesize":{"value":160195,"limit":2097152},"templateargumentsize":{"value":8391,"limit":2097152},"expansiondepth":{"value":12,"limit":100},"expensivefunctioncount":{"value":3,"limit":500},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":92926,"limit":5000000},"entityaccesscount":{"value":5,"limit":500},"timingprofile":["100.00%  639.317      1 -total"," 28.65%  183.162      1 Modèle:Références"," 16.17%  103.360      1 Modèle:Liens"," 14.65%   93.677      1 Modèle:Infobox_Discipline","  9.94%   63.559     25 Modèle:Article","  8.18%   52.270     28 Modèle:Lien_web","  5.22%   33.342      1 Modèle:Portail","  4.43%   28.304      8 Modèle:Article_détaillé","  4.36%   27.883      1 Modèle:Grec_ancien","  4.13%   26.428      9 Modèle:Méta_bandeau_de_section"]},"scribunto":{"limitreport-timeusage":{"value":"0.251","limit":"10.000"},"limitreport-memusage":{"value":6662801,"limit":52428800}},"cachereport":{"origin":"mw-web.eqiad.migration-78c6b9cd79-rxmm8","timestamp":"20251112112517","ttl":2592000,"transientcontent":false}}});});</script>
 <script type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"Article","name":"Robotique","url":"https:\/\/fr.wikipedia.org\/wiki\/Robotique","sameAs":"http:\/\/www.wikidata.org\/entity\/Q170978","mainEntity":"http:\/\/www.wikidata.org\/entity\/Q170978","author":{"@type":"Organization","name":"Contributeurs aux projets Wikimedia"},"publisher":{"@type":"Organization","name":"Fondation Wikimedia, Inc.","logo":{"@type":"ImageObject","url":"https:\/\/www.wikimedia.org\/static\/images\/wmf-hor-googpub.png"}},"datePublished":"2004-06-08T16:05:44Z","dateModified":"2025-10-29T17:46:46Z","image":"https:\/\/upload.wikimedia.org\/wikipedia\/commons\/c\/c5\/Shadow_Hand_Bulb_large.jpg","headline":"ensemble des techniques permettant la conception de robots"}</script>
 </body>
 </html>
