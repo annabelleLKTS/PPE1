@@ -16,12 +16,34 @@ echo -e "
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" />
 <meta charset='UTF-8' />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css" />
 <title>Répertoire des liens de PPE1</title>
 </head>
+
 <body>
-<h2>Tableau liens PPE1</h2>
+<section>
+<div class=\"hero has-text-centered\">
+<h1 class=\"title has-text-danger\">Tableau liens PPE1</h1>
+<br />
+<br />
+</div>
+<nav class=\"tabs is-centered\">
+	<ul>
+		<li class=\"has-background-danger-light\"><a href="/home/annabelle/coursM1/PPE1/index.html">Présentation du projet</a></li>
+		<li class=\"has-background-warning-light\"><a href="/home/annabelle/coursM1/PPE1/miniprojet/tableau.html">Tableau des résultats</a></li>
+	</ul>
+</nav>
+<br />
+<br />
+
+<div class=\"columns is-centered\">
+<div class=\"block content\">
+<p class=\"is-centered\"><u>  Tableau des résultats du mini-projet </u></p>
+
+<br />
+<br />
+
 <table border='1'>
 <tr>
 	<th> NUMERO </th>
@@ -63,8 +85,11 @@ done < "$liens"
 
 echo -e "
 </table>
+</div>
+</div>
+</section>
 </body>
 </html>
+<br />
+<br />
 "
-
-echo "fichier html généré : $html_page"
