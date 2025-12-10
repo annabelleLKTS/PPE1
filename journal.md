@@ -296,3 +296,306 @@ note à moi-même : tu commences vraiment à comprendre la logique ! Trop cool !
 
 [temps de travail : environ 2 heures] (yeeeeeees !!!)
 [fin update]
+
+
+## ../12/25 : ENFIN LE PROJET !!! படம்
+
+# 03/12/25 : choix du mot et orientation du travail
+Je devais travailler sur le lingala mais malheureusement je n'avais pas assez de donné ! Donc je travaillerais sur le tamoul.
+
+Après avoir hésité avec le mot homme, nous avons opté pour image (il s'agit du mot que préféré notre professeur 
+et aussi il y avait beaucoup à dire sur ce mot dans les 3 langues choisies). 
+
+படம் => image en tamoul
+3 langues : vietnamien, français,tamoul
+hypothèse : le mot image est polysémique dans toutes les langues
+problématique : a-t-il les mêmes sens que en français ? photo.. image de soi... "métaphore" ? 
+
+réponse pour le tamoul : non ! pour l'aspect figuré il existe un autre mot. 
+
+# 06/12/25 : récoltter les liens
+
+J'ai tout simplement collecté mes 50 LIENS pour le mot image => படம்  en tamoul ! C'était fastidieux mais j'ai réussi. 
+
+le mot image en tamoul est polysémique, il signifie a la fois : image, photo, film, peinture/tableau ! 
+
+# 09/12/25 : prépration d'un scrit
+avant le cours de PPE, j'ai voulu rédigérer un script afin de demander de l'aide en cas de bug, je dirai que ce script avaient une bonne base mais avaient énormément besoin d'être poffiné.
+J'ai utilisé le script du mini projet et je l'ai modifié. Je me suis appuyée sur les exemples d'anciens projets :
+
+voici la version que j'avais = 
+
+#!/usr/bin/env bash
+
+# Vérification du nombre d'arguments
+if [ $# -ne 1 ]; then
+    echo "Le script attend exactement un argument : fichier contenant les URLs"
+    exit 1
+fi
+
+dossier_urls=$1
+
+# Début du fichier HTML
+echo "<html>
+<head>
+    <meta charset=\"UTF-8\">
+    <title>Tableau avec concordance</title>
+    <style>
+        table { border-collapse: collapse; width: 90%; margin: auto; }
+        th, td { border: 1px solid black; padding: 8px; text-align: center; }
+        th { background-color: #ddd; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <h2 style='text-align:center;'>Tableau pour 'image'</h2>
+    <table>
+        <tr>
+            <th>Numero</th>
+            <th>URL</th>
+            <th>Code HTTP</th>
+            <th>Encodage</th>
+            <th>Nombre de mots</th>
+            <th>Occurrences</th>
+            <th>Dump textuel</th>
+            <th>Contexte</th>
+            <th>Concordance</th>
+        </tr>"
+
+lineno=1
+
+for fichier_urls in "$dossier_urls"/lang-*.txt; do  #verifier si mon chemin est exact.
+    lang=$(basename "$fichier_urls" | grep -oP "lang-\K\d+") #K = oublie tout ce qu'il y a avant dans le match. \d+ = un ou plusieurs chiffre => extrait uniquement après lang-
+    i=1 # il n'a rien avoir avec le for, car le for dit déjà "pour chaque fichier dans url prend le et prend également le chiffre derrière" donc i=1 sert juste pour rajouter un chiffre pour les contextes
+    #baseme = extrait uniquement le nom du fichier, sans le chemin du dossier
+
+while read -r url; do
+    echo "Traitement de $url ..." >&2
+
+    # Récupération du code HTTP et du type MIME avec encodage
+    data=$(curl -s -i -L -w "%{http_code}\n%{content_type}" -o ./temp.html "$url")
+    http_code=$(echo "$data" | head -1)
+    encoding=$(echo "$data" | tail -1 | grep -Po "charset=\S+" | cut -d"=" -f2)
+    encoding=${encoding:-"N/A"}  # si encodage vide, mettre N/A
+
+    # Conversion du HTML si besoin
+    if [[ "$encoding" != "UTF-8" && "$encoding" != "N/A" ]]; then
+        iconv -f "$encoding" -t UTF-8 ./temp.html -o ./temp_utf8.html
+        mv ./temp_utf8.html ./temp.html
+        encoding="UTF-8"
+    fi
+
+    # Dump textuel avec lynx
+    dump_file="./dump/lang-$lang-$i.txt" #verifier que le chemin est bon
+    lynx -dump -nolist ./temp.html > "$dump_file"
+
+    # Nombre de mots
+    nb_mots=$(wc -w < "$dump_file")
+
+    # Occurrences du mot ciblé "image"
+    occurrences=$(grep -i -o "image" "$dump_file" | wc -w)
+
+    # Extraction du contexte (2 lignes avant et après)
+    contexte_file="./contextes/lang-$lang-$i.txt"  #le $lang correspond tout simplement à la variable crée plus haut qui récupère le chiffre après lang-
+    grep -B2 -A2 -i "image" "$dump_file" > "$contexte_file"
+
+    # Concordance gauche/droite pour chaque occurence
+    concordance_file="./concordance/$lang-$i.html"
+    echo "<html><body><table border='1'><tr><th>Gauche</th><th>Mot</th><th>Droite</th></tr>" > "$concordance_file"
+    while read -r line_context; do
+        gauche=$(echo "$line_context" | sed 's/\(.*\)\bimage\b.*/\1/')
+        droite=$(echo "$line_context" | sed 's/.*\bimage\b\(.*\)/\1/' | sed 's/[^a-zA-Z ]//g')
+        echo "<tr><td>$gauche</td><td>image</td><td>$droite</td></tr>" >> "$concordance_file"
+    done < "$contexte_file"
+    echo "</table></body></html>" >> "$concordance_file"
+
+    # Ajout de la ligne dans le tableau HTML principal
+    echo "        <tr>
+            <td>$lineno</td>
+            <td><a href='$url'>$url</a></td>
+            <td>$http_code</td>
+            <td>$encoding</td>
+            <td>$nb_mots</td>
+            <td>$occurrences</td>
+            <td><a href='$dump_file'>dump</a></td>
+            <td><a href='$contexte_file'>contexte</a></td>
+            <td><a href='$concordance_file'>concordance</a></td>
+        </tr>"
+
+    i=$((i+1))
+    lineno=$((lineno+1))
+done < "$fichier_urls"
+
+# Fermeture de la table et du HTML
+echo "    </table>
+</body>
+</html>"
+
+# Nettoyage temporaire
+rm -f ./temp.html
+
+-------------------------------------------------
+
+# 10/12/25 : amélioration du script, création du tableau, récolte de donnés 
+
+objectif du script =
+- utiliser les fichiers dans le dossier url pour =
+-> créer pour chaque lien de ce fichier => un fichier text.. concordances.. dumps donc chaque langue devait avoir 50 liens ! 
+
+Problème rencontré 
+- chemin absolu = donc fonctionnerait que sur ma machine
+- les fichiers ne se créaient pas !!! le problème était que le chemin était mauvais lorsque je lançais le script ! 
+
+
+---------------
+
+Voici la v1 commité par mes propres soins :
+
+#!/usr/bin/env bash
+
+# Vérification du nombre d'arguments
+if [ $# -ne 1 ]; then
+    echo "Le script attend exactement un argument : fichier contenant les URLs"
+    exit 1
+fi
+
+dossier_urls=$1
+
+PROJET="/home/annabelle/projet-PPE"
+DUMPS="$PROJET/dumps-text"
+CONTEXTES="$PROJET/contextes"
+CONCORDANCES="$PROJET/concordances"
+
+
+mkdir -p "$DUMPS" "$CONTEXTES" "$CONCORDANCES"
+
+
+# Début du fichier HTML
+echo "<html>
+<head>
+    <meta charset=\"UTF-8\">
+    <title>Tableau avec concordance</title>
+    <style>
+        table { border-collapse: collapse; width: 90%; margin: auto; }
+        th, td { border: 1px solid black; padding: 8px; text-align: center; }
+        th { background-color: #ddd; }
+        tr:nth-child(even) { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <h2 style='text-align:center;'>Tableau pour 'image'</h2>
+    <table>
+        <tr>
+            <th>Numero</th>
+            <th>URL</th>
+            <th>Code HTTP</th>
+            <th>Encodage</th>
+            <th>Nombre de mots</th>
+            <th>Occurrences</th>
+            <th>Dump textuel</th>
+            <th>Contexte</th>
+            <th>Concordance</th>
+        </tr>"
+
+lineno=1
+
+for fichier_urls in "$dossier_urls"/lang*.txt; do  #verifier si mon chemin est exact.
+    lang=$(basename "$fichier_urls" | sed -E 's/lang([a-zA-Z]+)\.txt/\1/') #K = oublie tout ce qu'il y a avant dans le match. \d+ = un ou plusieurs chiffre => extrait uniquement après lang-
+    i=1 # il n'a rien avoir avec le for, car le for dit déjà "pour chaque fichier dans url prend le et prend également le chiffre derrière" donc i=1 sert juste pour rajouter un chiffre pour les contextes
+    #baseme = extrait uniquement le nom du fichier, sans le chemin du dossier
+
+while read -r url; do
+    echo "Traitement de $url ..." >&2
+
+    # Récupération du code HTTP et du type MIME avec encodage
+    data=$(curl -s -i -L -w "%{http_code}\n%{content_type}" -o ./temp.html "$url")
+    http_code=$(echo "$data" | head -1)
+    encoding=$(echo "$data" | tail -1 | grep -o "charset=\S+" | cut -d"=" -f2)
+    encoding=${encoding:-"N/A"}  # si encodage vide, mettre N/A
+
+    # Conversion du HTML si besoin
+    if [[ "$encoding" != "UTF-8" && "$encoding" != "N/A" ]]; then
+        iconv -f "$encoding" -t UTF-8 ./temp.html -o ./temp_utf8.html
+        mv ./temp_utf8.html ./temp.html
+        encoding="UTF-8"
+    fi
+
+    # Dump textuel avec lynx
+    dump_file="$DUMPS/lang-$lang-$i.txt" #verifier que le chemin est bon
+    lynx -dump -nolist ./temp.html > "$dump_file"
+
+    # Nombre de mots
+    nb_mots=$(wc -w < "$dump_file")
+
+    # Occurrences du mot ciblé "image"
+    occurrences=$(grep -i -o "படம்" "$dump_file" | wc -w)
+
+    echo "$i $lang"
+    # Extraction du contexte (2 lignes avant et après) /home/annabelle/projet-PPE/contextes
+
+    contexte_file="$CONTEXTES/lang-$lang-$i.txt"  #le $lang correspond tout simplement à la variable crée plus haut qui récupère le chiffre après lang-
+    grep -B2 -A2 -i "படம்" "$dump_file" > "$contexte_file"
+
+    # Concordance gauche/droite pour chaque occurence
+    concordance_file="$CONCORDANCES/$lang-$i.html"
+    echo "<html><body><table border='1'><tr><th>Gauche</th><th>Mot</th><th>Droite</th></tr>" > "$concordance_file"
+    while read -r line_context; do
+        gauche=$(echo "$line_context" | sed 's/\(.*\)\bபடம்\b.*/\1/')
+        droite=$(echo "$line_context" | sed 's/.*\bபடம்\b\(.*\)/\1/' | sed 's/[^a-zA-Z ]//g')
+        echo "<tr><td>$gauche</td><td>படம்</td><td>$droite</td></tr>" >> "$concordance_file"
+    done < "$contexte_file"
+    echo "</table></body></html>" >> "$concordance_file"
+
+    # Ajout de la ligne dans le tableau HTML principal
+    echo "        <tr>
+            <td>$lineno</td>
+            <td><a href='$url'>$url</a></td>
+            <td>$http_code</td>
+            <td>$encoding</td>
+            <td>$nb_mots</td>
+            <td>$occurrences</td>
+            <td><a href='$dump_file'>dump</a></td>
+            <td><a href='$contexte_file'>contexte</a></td>
+            <td><a href='$concordance_file'>concordance</a></td>
+        </tr>"
+
+    i=$((i+1))
+    lineno=$((lineno+1))
+done < "$fichier_urls"
+
+done
+
+# Fermeture de la table et du HTML
+echo "    </table>
+</body>
+</html>"
+
+# Nettoyage temporaire
+rm -f ./temp.html
+
+
+--------------------------------------------
+
+
+## ~ ce qui est fait au 10/12/25
+- recolter code http
+- recolter charset
+- recolter nombre de mots
+- recolter occurances
+- fichiers dump textuel
+- fichiers contexte
+- fichiers occurances
+- tokénisation pour le vietnamien
+- les 3 pages html pour les tableaux par langues ! 
+
+## - ce qu'il reste à faire au 10/10/25
+- fichier aspiration 
+- pals
+- gestion de fichiers robots.txt
+- bigramme
+- concordancier avec colorations des mots spécifique dans le contexte 
+- html/css du site bien-sur
+- collecter reste des liens pour fr et viet
+
+
+J'avance bien je suis plutôt satisfaite !!! Génial ! =)
