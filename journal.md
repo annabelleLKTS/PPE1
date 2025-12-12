@@ -599,3 +599,155 @@ rm -f ./temp.html
 
 
 J'avance bien je suis plutôt satisfaite !!! Génial ! =)
+
+
+## 11/12/25 : nous nous sommes répartis le travail
+
+Un membre de l'équipe m'a demandé de supprimer le traitement de sa langue dans le script que j'avais crée, 
+afin qu'elle puisse créer son propre script car elle souhaite s'entrainer. DOnc a orésent, nous avons finalement que deux tableaux !
+
+Cela nous a permis de répartir le travail, dans mon journal j'écriais donc que ce qui me concerne.
+Je suis chargée de :
+- creer le html uniquement de la page d'acceuil 
+- crééer le html uniquement de la page des nuages de mots
+- mon propre pals
+- mon propre script (déjà fait)
+- mon propre journal de bord pour le site 
+
+## 12/12/25 : Page d'acceuil pour le site du projet
+
+Aujourd'hui j'ai commencé à créer la page d'acceuil pour le projet, je le fais sur un brouillon ! MAIS je collerai ici ce que j'ai écris !
+Pour cela j'utilise 
+-> les exemples disponible dans le github de monsieur Dupont
+-> les anciens projets de master
+-> https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/Webpage_metadata
+
+Ce que j'ai fait concrétement :
+-> déssiner sur papier comment je visualise le site :
+- diviser en 4 sections 
+	1; Menu, en-tête
+	2; Petite banderole 
+	3; partie principale : avec les mots, définitions des mots et des images qui illustrent les POINTS de différence de sens entre les langues
+	3; zone membre avec courte descriptions 
+
+-> Voici à quoi cela ressemble pour l'instant : 
+
+<!doctype html>
+    <html>
+        <head>
+            <meta charset="utf-8" />
+            <title>Page Acceuille Projet PPE-1</title>
+        </head>
+        <body>
+            <p> Que l'aventure commence ! </p>
+
+              <!--- Je vais commencer par créer le menu --->
+        <div>
+        <header>
+            <div> <!-- permet de regroupe les choses ensembles pour que ça ne se mélange pas ! pratique pour créer des groupes -->
+            <aside> <!--- pour qu'il soit mis de côté -->
+            <p> MENU </P>
+                <nav>
+                    <ul>
+                        <li><a href=""> Présentation </a></li>
+                        <li><a href=""> Analyse </a></li>
+                        <li><a href=""> Tableaux </a>
+                            <ul>
+                                <li><a href="#"> Tableau Français </a></li>
+                                <li><a href=""> Tableau Tamoul </a></li>
+                                <li><a href=""> Tableau Vietnamien </a><li>
+                            </ul>
+                        </li>
+                        <li><a href="#"> Journal de bord </a>
+                            <ul>
+                                <li><a href=""> Journal Français </a></li>
+                                <li><a href=""> Journal Tamoul </a></li>
+                                <li><a href=""> Journal Vietnamien </a></li>
+                            </ul>
+                        </li>
+                        <li><a href=""> Nuages de mots </a></li>
+                    </ul>
+                </nav>
+            </aside>
+            </div> <!-- partie fr -->
+                <br />
+            <h1><strong> BIENVENUE </strong></h1>
+            <h1>
+            Projet PPE-1 Master TAL
+            </h1>
+            <h2>
+            Collaboration Nanterre Université - Sorbonne Nouvelle - INALCO
+            </h2>
+            <p> 2025-2026 </p>
+                <br />
+                <br />
+        </header>
+        </div>
+        <section>
+            <h3><strong> 🇫🇷 IMAGE | 🇮🇳 படம் | 🇻🇳 </strong></h3>  <!-- mettre ça au centre -->
+        </section>
+        <main> <!-- POur la zone principale du site -->
+        <div> <!-- image qui illustre le sens "FIGURE" -->
+            <img src="" alt=""> <!-- alt permet de décrire l'image pour les personnes malvoyantes ! trop trop cool vraiment !! -->
+            <h3> IMAGE </h3>
+            <p> Que signifie <strong>"image"</strong> en français ?</p>
+            <p> définition </p>
+
+        </div> <!-- fin partie fr -->
+            <br />
+            <br />
+        <div> <!--- illustre sens tableau -->
+            <img src="" alt=""> <!-- j'ai pensé que ça serait cool de mettre une image qui les différencies les uns des autres -->
+            <h3> படம் </h3>
+            <p> Que signifie <strong>"படம்"</strong> en Tamoul ?</p>
+            <p> définition </p>
+        </div><!-- partie tam -->
+            <br />
+            <br />
+        <div> <!--  illustre sud et nord ? -->
+            <img src="" alt="">
+            <h3> </h3>
+            <p> Que signifie <strong>" "</strong> en Vietnamien ?</p>
+            <p> définition </p>
+        </div> <!-- partie vietnamien -->
+            <br />
+            <br />
+        </main>
+            <br />
+                <section> <!-- pour créer des zones sur le site -->
+                    <h3> Qui sommes nous ? </h3 >
+                        <br />
+                        <br />
+                        <div>
+                            <h4> Tamoul </h4>
+                            <h5> A.L </h5>
+                            <p> Mini description </p>
+                            <p> Nanterre </p>
+                        </div>
+                        <div>
+                            <h4> Français </h4>
+                            <h5> M.W </h5>
+                            <p> Mini description </p>
+                            <p> Sorbonne Nouvelle </p>
+                        </div>
+                        <div>
+                            <h4> Vietnamien </h4>
+                            <h5> G. </h5>
+                            <p> Mini description </p>
+                            <p> INALCO </p>
+                        </div>
+                </section>
+<!-- mot dans les  -->
+
+
+
+        </body>
+    </html>
+
+------------------
+
+-> finalement j'ai écrit dans mon journal
+
+[fin de update]
+
+
